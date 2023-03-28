@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="hR`=ze`,WG4^?`O=]`0A" x="533" y="-12"></block><block type="pxt-on-start" id="JGjBbp!P,3Vidxek8PM3" x="-35" y="31"><statement name="HANDLER"><block type="function_call" id="6P;Xk9Vo]#(qH!kw?kY)"><mutation name="spanek" functionid="Y1R]Q}xE=xUQ:@?zbv:}"></mutation></block></statement></block><block type="input_logo_event" id="AHF)Zo0NEP#/;(PrdWr}" x="-38" y="228"><field name="action">TouchButtonEvent.Touched</field><statement name="HANDLER"><block type="function_call" id="VWD(1vlmHF/6R^RbXn8,"><mutation name="usmev1" functionid="RIjVJs87TB!L?#=i]@Lr"></mutation></block></statement></block><block type="function_definition" id="bEvz!Tx65.=%j4PD`VIu" x="394" y="285"><mutation name="usmev1" functionid="RIjVJs87TB!L?#=i]@Lr"></mutation><field name="function_name">usmev1</field><statement name="STACK"><block type="device_show_leds" id="dtvbeTMwM$87-1}LqTVi"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement></block><block type="function_definition" id="qlC]jO=!Pj0;v7Prq~,6" x="606" y="286"><mutation name="usmev2" functionid="7sl^eT,vf;dXRvpf(^a1"></mutation><field name="function_name">usmev2</field><statement name="STACK"><block type="device_show_leds" id="psf~1pMH{Fm|a,m]XPT^"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . # # # .
+        `</field></block></statement></block><block type="function_definition" id="f`9E|1MM?M_aD.U/HJD`" x="807" y="288"><mutation name="usmev3" functionid="F;B#{fUj3t;lweg4zjr@"></mutation><field name="function_name">usmev3</field><statement name="STACK"><block type="device_show_leds" id="ze31_*1]6WTzvfv^6jTI"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        # # # # #
+        `</field></block></statement></block><block type="function_definition" id="9SXa{5KO;|ysPjU#Xt/)" x="1014" y="290"><mutation name="spanek" functionid="Y1R]Q}xE=xUQ:@?zbv:}"></mutation><field name="function_name">spanek</field><statement name="STACK"><block type="device_show_leds" id="?[iXFYQLuMv.rbf,E8?7"><field name="LEDS">`
+        . . . . . 
+        # # . # # 
+        . . . . . 
+        . . . . . 
+        . # # # .
+        `</field></block></statement></block><block type="input_logo_event" id="8Ue#3JwtQ1`RqD}TMu~c" x="-32" y="377"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="function_call" id="::2$kd^k-?!)w_[Vjg_M"><mutation name="usmev2" functionid="7sl^eT,vf;dXRvpf(^a1"></mutation></block></statement></block><block type="input_logo_event" id="5}Tkr*GfAIs6x-NS./}j" x="-35" y="535"><field name="action">TouchButtonEvent.LongPressed</field><statement name="HANDLER"><block type="function_call" id=":Zx/Ye!eU*=AcQ#pJ/yr"><mutation name="usmev3" functionid="F;B#{fUj3t;lweg4zjr@"></mutation></block></statement></block><block type="input_logo_event" id="rx?v.:u7wk[`_~R|1T9L" x="-36" y="709"><field name="action">TouchButtonEvent.Released</field><statement name="HANDLER"><block type="function_call" id="-Z^#Vgn*zU=)@};:?Iry"><mutation name="spanek" functionid="Y1R]Q}xE=xUQ:@?zbv:}"></mutation></block></statement></block></xml>
