@@ -16,10 +16,7 @@ namespace HelloMod.Projectiles
     /// </summary>
     public class OhnivaKoule : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Ohnivá Koule");
-        }
+        // Jméno je v Localization/en-US.hjson (tModLoader 1.4.4+)
 
         public override void SetDefaults()
         {
@@ -69,7 +66,7 @@ namespace HelloMod.Projectiles
         /// <summary>
         /// Voláno při zásahu NPC.
         /// </summary>
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             // Zapálíme NPC na 3 sekundy (180 tiků)
             target.AddBuff(BuffID.OnFire, 180);

@@ -16,15 +16,7 @@ namespace HelloMod.Items
     /// </summary>
     public class SlunecniMec : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            // Tooltip zobrazený v inventáři (pod jménem předmětu)
-            Tooltip.SetDefault(
-                "Meč ukovaný ze síly slunce\n" +
-                "Zapaluje nepřátele při zásahu\n" +
-                "[c/FF4500:Výstřelí ohnivou kouli při dostatku many]"
-            );
-        }
+        // Jméno a tooltip jsou v Localization/en-US.hjson (tModLoader 1.4.4+)
 
         public override void SetDefaults()
         {
@@ -58,7 +50,7 @@ namespace HelloMod.Items
         /// <summary>
         /// Voláno při každém zásahu NPC tímto předmětem.
         /// </summary>
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
             // Zapálíme NPC na 5 sekund (300 tiků při 60 FPS)
             target.AddBuff(BuffID.OnFire, 300);

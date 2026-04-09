@@ -17,17 +17,17 @@ namespace HelloMod.NPCs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Přátelský Cestovatel");
+            // Jméno je v Localization/en-US.hjson (tModLoader 1.4.4+)
 
             // Počet snímků v spritesheet animaci (výchozí Terraria NPC mají 25)
-            Main.npcFrameCount[NPC.type] = 25;
+            Main.npcFrameCount[Type] = 25;
 
             // Přiřadíme NPC do kategorie "přátelských" pro bestiář
-            NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new(0)
+            NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers
             {
                 Velocity = 1f
             };
-            NPCID.Sets.NPCBestiaryDrawOffset.Add(NPC.type, drawModifiers);
+            NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
         }
 
         public override void SetDefaults()
