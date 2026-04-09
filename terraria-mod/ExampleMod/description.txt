@@ -1,0 +1,8 @@
+Ukázkový mod vytvořený podle tutoriálu.
+
+Přidává:
+- Sluneční Meč (SlunecniMec) – melee zbraň zapalující nepřátele
+- Ohnivá Koule (OhnivaKoule) – magický projektil
+- Přátelský Cestovatel (PriatelskyCestovatel) – NPC s pasivní AI
+
+Jde o vzdělávací projekt pro začátečníky v tvorbě Terraria modů.
