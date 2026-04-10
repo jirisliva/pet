@@ -25,9 +25,10 @@ namespace HelloMod.Projectiles
             Projectile.height = 14;
 
             // --- AI ---
-            // ProjAIStyleID.Arrow = rovný let, gravity = false
+            // ProjAIStyleID.Arrow = rovný let vpřed, bez gravitace
+            // AIType záměrně nenastavujeme – kopírování AI z Fireballu
+            // by převzalo i jeho rotační animaci a způsobovalo by vizuální glitch
             Projectile.aiStyle = ProjAIStyleID.Arrow;
-            AIType = ProjectileID.Fireball; // chování identické s Fireballem
 
             // --- Kolize ---
             Projectile.friendly = true;   // poškozuje nepřátele, ne hráče
