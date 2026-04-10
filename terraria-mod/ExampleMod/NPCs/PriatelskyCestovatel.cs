@@ -1,5 +1,4 @@
 using Terraria;
-using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -70,20 +69,6 @@ namespace HelloMod.NPCs
                 return 0.005f; // 0.5% šance na každý pokus o spawn
 
             return 0f;
-        }
-
-        /// <summary>
-        /// Přidá NPC do bestiáře (encyklopedie nepřátel).
-        /// </summary>
-        public override void SetBestiary(Terraria.GameContent.Bestiary.BestiaryDatabase database,
-                                         Terraria.GameContent.Bestiary.BestiaryEntry bestiaryEntry)
-        {
-            bestiaryEntry.Info.AddRange(new Terraria.GameContent.Bestiary.IBestiaryInfoElement[]
-            {
-                // Zobrazí se v bestiáři jako "vyskytuje se na povrchu ve dne"
-                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
-                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Times.DaytimeIcon,
-            });
         }
 
         /// <summary>
