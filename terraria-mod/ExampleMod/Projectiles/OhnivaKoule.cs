@@ -18,6 +18,16 @@ namespace HelloMod.Projectiles
     {
         // Jméno je v Localization/en-US.hjson (tModLoader 1.4.4+)
 
+        // Počet animačních snímků – odpovídá počtu framů v OhnivaKoule.png
+        private const int FrameCount = 4;
+        // Kolik tiků trvá jeden frame (nižší = rychlejší animace)
+        private const int FrameSpeed = 5;
+
+        public override void SetStaticDefaults()
+        {
+            Main.projFrames[Projectile.type] = FrameCount;
+        }
+
         public override void SetDefaults()
         {
             // --- Hitbox ---
@@ -47,12 +57,21 @@ namespace HelloMod.Projectiles
         }
 
         /// <summary>
-        /// Voláno každý tik – přidáváme smoke/fire dust efekt.
+        /// Voláno každý tik – animace framů + dust trail efekt.
         /// </summary>
         public override void AI()
         {
-            // Každý tik přidáme malou jiskřičku za projektilem (trail efekt)
-            if (Main.rand.NextBool(3)) // pravděpodobnost 1/3 každý tik
+            // --- Animace ---
+            // frameCounter počítá tiky; po FrameSpeed tikách přepneme na další frame
+            Projectile.frameCounter++;
+            if (Projectile.frameCounter >= FrameSpeed)
+            {
+                Projectile.frameCounter = 0;
+                Projectile.frame = (Projectile.frame + 1) % FrameCount;
+            }
+
+            // --- Dust trail ---
+            if (Main.rand.NextBool(3))
             {
                 Dust.NewDust(
                     Projectile.position,
